@@ -23,13 +23,13 @@ public class Group {
     }
 
     public double getAverageScore() {
-        double groupTotalScore = 0;
+        double groupTotalAverageScore = 0;
 
         for (Student student : students) {
-            groupTotalScore += student.getAverageScore();
+            groupTotalAverageScore += student.getAverageScore();
         }
 
-        return groupTotalScore/students.size();
+        return groupTotalAverageScore / students.size();
     }
 
     public int getNumberOfExcellentStudents() {
